@@ -11,7 +11,7 @@ class Day05 {
         return BigInteger(1, md.digest(toByteArray())).toString(16).padStart(32, '0')
     }
 
-    //    @Test
+    @Test
     fun part1() {
         var pw = ""
         var i = 0
@@ -30,7 +30,7 @@ class Day05 {
     @Test
     fun part2() {
         val pw = Array(8) { '?' }
-        var i = 1617992
+        var i = 0
         while (true) {
             val hash = (puzzleInput + i++).md5()
             if (hash.startsWith(prefix)) {
