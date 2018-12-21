@@ -3,7 +3,7 @@ import java.io.File
 
 class Day04 {
     private val rx = Regex("([a-z-]+)-([0-9]+)\\[([a-z]+)\\]")
-    private val ids = File(this.javaClass.getResource("04.txt").path).readLines().map {
+    private val ids = File("resources/04.txt").readLines().map {
         val m = rx.matchEntire(it)
         if (m == null) {
             println(it)

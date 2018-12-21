@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test
 import java.io.File
 
 class Day08 {
-    private val data = File(this.javaClass.getResource("08.txt").path).readLines()
+    private val data = File("resources/08.txt").readLines()
     private val screen = {
         val screen = Array(6) { Array(50) { 0 } }
         for (s in data) {

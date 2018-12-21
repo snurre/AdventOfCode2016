@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test
 import java.io.File
 
 class Day15 {
-    private val discs = File(this.javaClass.getResource("15.txt").path).readLines().map { s ->
+    private val discs = File("resources/15.txt").readLines().map { s ->
         val m = Regex("Disc #([0-9]+) has ([0-9]+) positions; at time=([0-9]+), it is at position ([0-9]+)\\.").matchEntire(s)!!.groupValues.toList().drop(1).map { it.toInt() }
         m[1] to m[3]
     }

@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test
 import java.io.File
 
 class Day12 {
-    private val instructions = File(this.javaClass.getResource("12.txt").path).useLines {
+    private val instructions = File("resources/12.txt").useLines {
         it.map { s ->
             val p = s.split(' ')
             Triple(

@@ -3,7 +3,7 @@ import java.io.File
 
 class Day03 {
     private val rx = Regex(" +([0-9]+) +([0-9]+) +([0-9]+)")
-    private val triangles = File(this.javaClass.getResource("03.txt").path).readLines().map {
+    private val triangles = File("resources/03.txt").readLines().map {
         val m = rx.matchEntire(it)!!
         listOf(m.groupValues[1].toInt(), m.groupValues[2].toInt(), m.groupValues[3].toInt())
     }

@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicInteger
 
 class Day06 {
     private val charFrequency = {
-        val data = File(this.javaClass.getResource("06.txt").path).readLines()
+        val data = File("resources/06.txt").readLines()
         val chars = Array(data[0].length) { mutableMapOf<Char, AtomicInteger>() }
         for (s in data) {
             for (i in 0 until s.length) {

@@ -4,7 +4,7 @@ import java.io.File
 class Day18 {
     private val safe = '.'
     private val trap = '^'
-    private val instructions = File(this.javaClass.getResource("18.txt").path).readText().trim()
+    private val instructions = File("resources/18.txt").readText().trim()
 
     private fun solve(rows: Int): List<String> {
         val result = mutableListOf(instructions)

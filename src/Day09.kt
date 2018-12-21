@@ -3,7 +3,7 @@ import java.io.File
 
 class Day09 {
     private val markerRx = Regex("\\(([0-9]+)x([0-9]+)\\)")
-    private val data = File(this.javaClass.getResource("09.txt").path).readText().trim()
+    private val data = File("resources/09.txt").readText().trim()
 
     private fun getLength(s: CharSequence, v: Int): Long {
         var sum = 0L

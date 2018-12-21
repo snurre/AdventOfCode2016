@@ -37,7 +37,7 @@ class Day10 {
     private val bins = mutableMapOf<Int, Thing>()
 
     init {
-        File(this.javaClass.getResource("10.txt").path).useLines {
+        File("resources/10.txt").useLines {
             it.forEach { s ->
                 val p = s.split(' ')
                 when (p[0]) {

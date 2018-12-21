@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test
 import java.io.File
 
 class Day07 {
-    private val ips = File(this.javaClass.getResource("07.txt").path).readLines()
+    private val ips = File("resources/07.txt").readLines()
     private val parts =
         ips.map { ip -> ip to ip.split('[', ']').withIndex().filter { it.index % 2 == 0 }.map { it.value }.toSet() }
             .toMap()

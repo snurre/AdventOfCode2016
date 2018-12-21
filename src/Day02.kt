@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test
 import java.io.File
 
 class Day02 {
-    private val instructions = File(this.javaClass.getResource("02.txt").path).readLines()
+    private val instructions = File("resources/02.txt").readLines()
 
     @Test
     fun part1() {

@@ -27,7 +27,7 @@ class Day01 {
         }
     }
 
-    private val instructions = File(this.javaClass.getResource("01.txt").path).readText().trim().split(", ")
+    private val instructions = File("resources/01.txt").readText().trim().split(", ")
         .map { (it[0] == 'L') to it.substring(1).toInt() }
 
     @Test
